@@ -26,7 +26,7 @@ https://wskkku.github.io/Rofty-theme/
 ![](/post-images/index-m.png)
  # 捐赠
 
-![支付宝](/post-images/zhifubao.png)
+![支付宝](/post-images/zhifubao.jpg)
 
 ![微信](/post-images/weixin.png)
        
