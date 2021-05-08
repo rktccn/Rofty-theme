@@ -21,14 +21,14 @@ https://github.com/wskkku/Rofty-theme
 ## demo 网站
 https://wskkku.github.io/Rofty-theme/
 ## pc 端 (浅色，深色)
-![主页](/post-images/zhifubao.png)
+![主页](/post-images/index.png)
 ## 手机端
-![](/post-images/weixin.png)
+![](/post-images/index-m.png)
  # 捐赠
 
-       <img src="https://z3.ax1x.com/2021/05/08/gGLEqA.jpg" sytle="width:50%">
-      
-       <img src="https://z3.ax1x.com/2021/05/08/gGLArd.png sytle="width:50%"">
+![支付宝](/post-images/zhifubao.png)
+
+![微信](/post-images/weixin.png)
        
 # 写在最后
 由于本人也仅是一名初学者，因此部分代码可能较为复杂、繁乱，可能会出现一些意想不到的问题。还请多多包涵，非常感谢
