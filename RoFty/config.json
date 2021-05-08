@@ -1,8 +1,8 @@
 {
   "name": "RoFty",
-  "version": "0.0.6",
+  "version": "0.1.2",
   "author": "Rolce",
-  "repository": "https://github.com/getgridea/gridea-theme-notes",
+  "repository": "https://github.com/wskkku/Rofty-theme",
   "customConfig": [
     {
       "group": "Valine评论设置",
@@ -295,7 +295,26 @@
       "label": "友链",
       "group": "友链",
       "type": "array",
-      "value": [],
+      "value": [
+        {
+          "siteName": "海岛心hey",
+          "siteLink": "https://fehey.com",
+          "siteLogo": "",
+          "description": "一个前端，Gridea 作者"
+        },
+        {
+          "siteName": "Gridea 官网",
+          "siteLink": "https://gridea.dev",
+          "siteLogo": "",
+          "description": "一个静态博客写作客户端"
+        },
+        {
+          "siteName": "Ro key!",
+          "siteLink": "https://wskkku.github.io/",
+          "siteLogo": "https://z3.ax1x.com/2021/05/08/gJl0LF.png",
+          "description": "芜湖，起飞🛫"
+        }
+      ],
       "arrayItems": [
         {
           "label": "名称",
