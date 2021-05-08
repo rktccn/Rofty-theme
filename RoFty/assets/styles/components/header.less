@@ -1,0 +1,53 @@
+.jumbotron {
+  overflow        : hidden;
+  position        : relative;
+  margin-top      : -60px;
+  padding         : 10rem 2rem;
+  padding-bottom  : 8rem;
+  border-radius   : 0 0 0 13rem;
+  background-color: var(--page-bg-color);
+
+  @media (max-width: 992px) {
+    border-radius : 0 0 0 7rem;
+    padding       : 8rem 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .background {
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+    width   : 100%;
+    height  : 100%;
+  }
+
+  .avatar {
+    overflow       : hidden;
+    position       : relative;
+    width          : 12.5rem;
+    height         : 12.5rem;
+    background-size: cover;
+    border-radius  : 1.25rem;
+
+    @media (max-width: 768px) {
+      width : 9.25rem;
+      height: 9.25rem;
+    }
+  }
+
+  .title {
+    margin-bottom: 1rem;
+    font-weight  : 400;
+  }
+
+  .context {
+    margin-bottom: 2.5rem;
+  }
+
+  #about-me {
+    overflow        : hidden;
+    position        : relative;
+    background-color: var(--main-color);
+    border          : none;
+  }
+}

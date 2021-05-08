@@ -1,0 +1,33 @@
+<div class="jumbotron">
+
+  <% if (site.customConfig.bannerBgImage && site.customConfig.bannerBgImage !='' ){ %>
+    <div class="background"
+      style="background: url('<%= themeConfig.domain %>/media/images/custom-bannerBgImage.jpg') no-repeat; background-size: cover;">
+      <div class="mask"></div>
+    </div>
+    <% } %>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 d-none d-lg-block"></div>
+          <div class="col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
+            <div class="avatar"
+              style="background: url('<%= themeConfig.domain %>/images/avatar.png?v=<%= site.utils.now %>');background-size: cover;"
+              alt="">
+              <div class="mask-dark"></div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <h1 class="display-4 title">
+              <%= themeConfig.siteName %>
+            </h1>
+            <p class="lead context">
+              <%- themeConfig.siteDescription %>
+            </p>
+            <% if(site.customConfig.contactMe && site.customConfig.contactMe !='' ) { %>
+              <a class="btn btn-primary btn-lg" href="<%= site.customConfig.contactMe %>" r='btn-hover' role="button"
+                id="about-me">关于我</a>
+              <% } %>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,0 +1,86 @@
+@import './lib/colors';
+@import './abstracts/varibles';
+
+* {
+  box-sizing : border-box;
+  transition : all .3s;
+  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+}
+
+a {
+  color          : var(--link-color);
+  text-decoration: none;
+  transition     : all 0.3s;
+
+  &:hover {
+    color          : var(--link-color-hover);
+    text-decoration: none;
+  }
+
+  transition: none;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+body {
+  background-color: var(--page-bg-color);
+}
+
+[r=btn-hover] {
+  &::after {
+    position        : absolute;
+    content         : '';
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: #000;
+    opacity         : 0;
+    transition      : all .3s;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+html {
+  .context {
+    color: #999999;
+  }
+}
+
+html[theme=dark] {
+  .mask-dark {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: var(--box-bg-color);
+    opacity         : 0.5;
+  }
+
+  .context {
+    color: var(--context-text-color);
+  }
+}
+
+@import "./components/navbar.less";
+@import "./components/pagination.less";
+@import "./components/post-list.less";
+@import "./components/post.less";
+@import "./lib/markdown.less";
+@import "./components/friends.less";
+@import "./components/header.less";
+@import "./components/tags.less";
+@import "./components/tag.less";
+@import "./components/footer.less";
+@import "./lib/github.less";
+@import "./components/archives.less";
+
+// @import "./components/home.less";

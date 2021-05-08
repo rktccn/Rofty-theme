@@ -1,0 +1,31 @@
+<html lang='zh-CN'>
+
+<head>
+  <%- include('./includes/head', { siteTitle: `${tag.name} | ${themeConfig.siteName}` }) %>
+    <meta name="description" content="<%- site.customConfig.metaDescription || themeConfig.siteDescription %>" />
+</head>
+
+<body>
+
+  <%- include('./includes/navbar') %>
+
+    <%- include('./includes/header') %>
+      <div class="main">
+        <div class="main-content">
+          <div class="current-tag-container">
+            <h2 class="title">
+              # <%= tag.name %>
+            </h2>
+          </div>
+          <%- include('./includes/post-list') %>
+        </div>
+      </div>
+      <%- include('./includes/pagination') %>
+
+        <%- include('./includes/footer') %>
+
+          <%- include('./includes/script') %>
+
+</body>
+
+</html>

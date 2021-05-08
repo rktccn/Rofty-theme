@@ -1,0 +1,128 @@
+.post-title,
+.post-content,
+.toc-container {
+    padding         : 25px 35px;
+    background-color: var(--box-bg-color);
+    border-radius   : 1.45rem;
+}
+
+.post-title {
+    display   : inline-block;
+    text-align: center;
+    width     : 100%;
+}
+
+.post-info {
+    text-align   : center;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+
+    span,
+    a {
+        display      : inline-block;
+        margin       : 8px 12px;
+        margin-bottom: 0;
+        font-size    : 14px;
+    }
+
+    span {
+        color: var(--title-text-color);
+    }
+
+    a {
+        color: var(--link-color);
+
+
+        &:hover {
+            color: var(--link-color-hover);
+        }
+    }
+}
+
+.post-feature-image {
+    width        : 100%;
+    border-radius: 1.45rem;
+}
+
+.post-detail {
+    margin-top: 8px;
+
+
+    h1,
+    h2,
+    h3 {
+        line-height   : 1.5;
+        margin-top    : 35px;
+        margin-bottom : 10px;
+        padding-bottom: 12px;
+        font-weight   : 700;
+    }
+
+    .toc-container {
+        position: sticky;
+        top     : 70px;
+
+        li {
+            margin-left  : 1rem;
+            margin-top   : .25rem;
+            margin-bottom: .25rem;
+
+            a {
+                &:not(.current) {
+                    display   : block;
+                    transition: all .3s;
+
+                    &:hover {
+                        padding      : .5rem 1rem;
+                        border-radius: .25rem;
+                        border       : 1px solid var(--main-color);
+                        font-size    : 16px;
+                        color        : var(--main-color);
+                    }
+                }
+            }
+        }
+
+        .current {
+            display         : block;
+            padding         : .5rem 1rem;
+            border-radius   : .25rem;
+            background-color: var(--main-color);
+            font-size       : 16px;
+            color           : #fff;
+        }
+
+        .toc-parent {
+            display         : block;
+            padding         : .5rem 1rem;
+            border-radius   : .25rem;
+            background-color: var(--main-color);
+            font-size       : 16px;
+            color           : #fff;
+        }
+    }
+}
+
+.post-footer {
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+    margin-top     : 2.5rem;
+    margin-bottom  : 4.5rem;
+
+    .prev-post,
+    .next-post {
+        display: block;
+
+        title {
+            font-size  : 16px;
+            font-weight: bolder;
+        }
+    }
+}
+
+.row {
+    margin-left : 0;
+    margin-right: 0;
+}

@@ -1,0 +1,71 @@
+.site-footer {
+  background-color: var(--box-bg-color);
+  padding         : 35px 55px;
+}
+
+.detial {
+  display        : flex;
+  color          : var(--context-text-color);
+  justify-content: center;
+  align-items    : center;
+  align-content  : stretch;
+  flex-direction : column;
+  height         : 100%;
+
+  ul {
+    li {
+      float: left;
+
+      &:nth-child(2n) {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.about-me {
+  position      : relative;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+
+  @media (max-width:992px) {
+    margin-top: 2rem;
+  }
+
+  .avator {
+    position     : relative;
+    z-index      : 3;
+    width        : 6.5rem;
+    height       : 6.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .social-link {
+    display         : flex;
+    justify-content : space-between;
+    margin-top      : 15px;
+    padding         : 0px 25px;
+    border-radius   : 20px;
+    background-color: var(--page-bg-color);
+
+    a {
+      display         : inline-block;
+      padding         : 5px 5px;
+      background-color: transparent;
+      transition      : all .3s;
+
+      &:hover {
+        background-color: var(--box-bg-color);
+      }
+
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+
+      i {
+        font-size: 21px;
+      }
+    }
+  }
+}

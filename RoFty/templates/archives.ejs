@@ -1,0 +1,29 @@
+<html lang='zh-CN'>
+
+<head>
+  <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
+    <meta name="description" content="<%- site.customConfig.metaDescription || themeConfig.siteDescription %>" />
+</head>
+
+<body>
+
+  <%- include('./includes/navbar') %>
+
+    <%- include('./includes/header') %>
+
+      <div class="container">
+
+        <%- include('./includes/post-list-archives') %>
+
+
+      </div>
+
+      <%- include('./includes/pagination') %>
+
+        <%- include('./includes/footer') %>
+
+          <%- include('./includes/script') %>
+
+</body>
+
+</html>

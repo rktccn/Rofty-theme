@@ -1,0 +1,133 @@
+<div class="nav-placeholder">
+    <nav class="navbar navbar-expand-lg light-theme">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="<%= themeConfig.domain %>/favicon.ico?v=<%= site.utils.now %>" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+                <%= themeConfig.siteName %>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list navbar-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <% menus.forEach(function(menu) { %>
+                        <% if (menu.openType==='External' ) { %>
+                            <li class="nav-item">
+                                <a href="<%= menu.link %>" class="nav-link" target="_blank">
+                                    <%= menu.name %>
+                                </a>
+                            </li>
+                            <% } else { %>
+                                <li class="nav-item">
+                                    <a href="<%= menu.link %>" class="nav-link">
+                                        <%= menu.name %>
+                                    </a>
+                                </li>
+                                <% } %>
+                                    <% }); %>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0" id="gridea-search-form"
+                    action="<%= themeConfig.domain %>/search/">
+                    <input class="search-input mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q"
+                        autocomplete="off" />
+                    <button class="btn-search my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="theme-change">
+                    <ul>
+                        <i class="bi bi-sun-fill light-theme"></i>
+                        <i class="bi bi-moon-fill dark-theme"></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<% if(site.customConfig.doAutoChangeTheme==true){ %>
+    <script>
+        var nowTime = new Date()
+        var hour = nowTime.getHours()
+        if (hour >= 19 || hour <= 5 && $.cookie('theme') == undefined) {
+            $.cookie('theme', 'dark', { path: '/' })
+            $('html').attr('theme', 'dark');
+        }
+    </script>
+    <% } %>
+
+        <script>
+            var themeFlag = 0
+            if ($.cookie('theme') === 'dark') {
+                $('.theme-change').find('ul').css({
+                    'transform': 'translateX(-55px)',
+                    'transition': 'none'
+                })
+                themeFlag = 1
+            }
+
+            $('.theme-change').click(function () {
+                $(this).find('ul').css('transition', '.3s')
+                if (themeFlag == 0) {
+                    $(this).find('ul').css('transform', 'translateX(-55px)');
+                    themeFlag = 1
+                    $.removeCookie('theme', { path: '/' })
+                    $.cookie('theme', 'dark', { path: '/' })
+                    $('html').attr('theme', 'dark');
+                } else {
+                    $(this).find('ul').css('transform', 'translateX(0px)');
+                    themeFlag = 0
+                    $.removeCookie('theme', { path: '/' })
+                    $.cookie('theme', 'light', { path: '/' })
+                    $('html').attr('theme', 'light');
+                }
+            });
+
+            window.addEventListener('scroll', function () {
+                if (this.pageYOffset >= 300) {
+                    $('.navbar').addClass('fixed-top').css({
+                        'background': 'var(--box-bg-color)',
+                        'border-bottom': '2px solid var(--main-color)',
+                    })
+
+                    $('.search-input').css('backgroundColor', 'var(--page-bg-color)')
+                    $('.btn-search').css('backgroundColor', 'var(--page-bg-color)')
+                } else {
+                    $('.navbar').removeClass('fixed-top').css({
+                        'background': 'none',
+                        'border-bottom': 'none',
+                    })
+
+                    $('.search-input').css('backgroundColor', 'var(--box-bg-color)')
+                    $('.btn-search').css('backgroundColor', 'var(--box-bg-color)')
+                }
+            })
+
+            $('.navbar-toggler').click(function () {
+                if (window.pageYOffset < 300) {
+                    if ($(this).attr('aria-expanded') == "false") {
+                        $('.navbar').css({
+                            'background': 'var(--box-bg-color)',
+                            'border-bottom': '2px solid var(--main-color)',
+                        })
+
+                        $('.search-input').css('backgroundColor', 'var(--page-bg-color)')
+                        $('.btn-search').css('backgroundColor', 'var(--page-bg-color)')
+                    } else {
+                        $('.navbar').css({
+                            'background': 'none',
+                            'border-bottom': 'none',
+                        })
+
+                        $('.search-input').css('backgroundColor', 'var(--box-bg-color)')
+                        $('.btn-search').css('backgroundColor', 'var(--box-bg-color)')
+                    }
+                }
+            });
+            console.log($.cookie('theme'));
+        </script>

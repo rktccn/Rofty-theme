@@ -1,0 +1,69 @@
+<meta charset="utf-8" />
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>
+  <%= siteTitle %>
+</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/css/normalize0.0.0.1.css">
+<script src="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/js/jQuery.Rokss.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+
+<link rel="shortcut icon" href="<%= themeConfig.domain %>/favicon.ico?v=<%= site.utils.now %>">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="<%= themeConfig.domain %>/styles/main.css">
+
+<link rel="alternate" type="application/atom+xml" title="<%= siteTitle %> - Atom Feed"
+  href="<%= themeConfig.domain %>/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_light.min.css"
+  id="hightLightCode" rel="stylesheet" type="text/css" />
+
+
+<script>
+  var setStyle = function (cssArr) {
+    var i = 0, len = cssArr.length;
+    for (i; i < len; i++) {
+      document.write('<link href="' + cssArr[i] + '" type="text/css" rel=stylesheet>');
+    }
+  };
+
+  if ($.cookie('theme') === 'dark') {
+    $('html').attr('theme', 'dark');
+    $('#hightLightCode').attr('href', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_dark.min.css')
+  } else {
+    $('#hightLightCode').attr('href', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_light.min.css')
+  }
+
+</script>
+<% if (site.customConfig.ga) { %>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= site.customConfig.ga %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '<%= site.customConfig.ga %>');
+  </script>
+  <% } %>
+
+    <% if(site.customConfig.googleA && site.customConfig.googleA !='' ) {%>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5JKRHJF7B"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '<%=site.customConfig.googleA%>');
+      </script>
+      <% } %>
+        <% if(site.customConfig.googleFontHead && site.customConfig.googleFontHead !='' ) { %>
+          <%- site.customConfig.googleFontHead %>
+            <% } %>

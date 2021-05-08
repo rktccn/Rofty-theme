@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+    <%- include('./includes/head', { siteTitle: `友链 | ${themeConfig.siteName}` }) %>
+</head>
+
+<body>
+    <%- include('./includes/navbar') %>
+
+        <%- include('./includes/header') %>
+
+            <% if (site.customConfig.friends && site.customConfig.friends !='' ) { %>
+                <div class="container card-friends">
+                    <div class="card-columns">
+                        <% site.customConfig.friends.forEach(function(friend) { %>
+                            <a class="card p-3 text-right" href="<%= friend.siteLink %>" target="_blank">
+                                <blockquote class="blockquote mb-0">
+                                    <div class="left avator">
+                                        <img src="<%= friend.siteLogo %>" alt="">
+                                        <div class="mask-dark"></div>
+                                    </div>
+                                    <p class="title">
+                                        <%= friend.siteName %>
+                                    </p>
+                                    <footer>
+                                        <small class="text-muted">
+                                            <%= friend.description %>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </a>
+                            <% }); %>
+                    </div>
+                </div>
+                <% } else { %>
+                    <div class="no-friend">
+                        <h2>! 还没有添加友链
+                    </div>
+                    <% } %>
+                        <div class="container">
+                            <%- include('./includes/valine') %>
+                        </div>
+                        <%- include('./includes/footer') %>
+
+                            <%- include('./includes/script') %>
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+{
+  "name": "RoFty",
+  "version": "0.0.6",
+  "author": "Rolce",
+  "repository": "https://github.com/getgridea/gridea-theme-notes",
+  "customConfig": [
+    {
+      "group": "Valine评论设置",
+      "label": "Appid",
+      "name": "valineAppid",
+      "type": "textarea",
+      "value": ""
+    },
+    {
+      "group": "Valine评论设置",
+      "label": "Appkey",
+      "name": "valineAppkey",
+      "type": "textarea",
+      "value": ""
+    },
+    {
+      "name": "textSize",
+      "label": "正文内容文字大小",
+      "group": "布局",
+      "value": "16px",
+      "type": "input",
+      "note": "px 或 rem（如 16px 或 1rem）"
+    },
+    {
+      "name": "openPostToc",
+      "label": "是否显示文章目录",
+      "group": "布局",
+      "value": true,
+      "type": "switch",
+      "note": "仅在宽屏时生效"
+    },
+    {
+      "name": "contactMe",
+      "label": "个人介绍",
+      "group": "布局",
+      "value": "",
+      "type": "input",
+      "card": "post",
+      "note": "个人介绍页面链接"
+    },
+    {
+      "name": "mainColor",
+      "label": "网站主色调",
+      "group": "颜色",
+      "value": "#177CB0",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "contentBgColor",
+      "label": "内容区背景色",
+      "group": "颜色",
+      "value": "#FFF",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "pageBgColor",
+      "label": "网页背景色",
+      "group": "颜色",
+      "value": "#F1F1F1",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "titleTextColor",
+      "label": "标题文字颜色",
+      "group": "颜色",
+      "value": "#222",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "contextTextColor",
+      "label": "正文文字颜色",
+      "group": "颜色",
+      "value": "#333",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "linkColor",
+      "label": "链接颜色",
+      "group": "颜色",
+      "value": "#999",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "linkHoverColor",
+      "label": "链接 Hover 颜色",
+      "group": "颜色",
+      "value": "#177CB0",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "mainColorDark",
+      "label": "网站主色调",
+      "group": "夜间颜色",
+      "value": "#9E41C6",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "contentBgColorDark",
+      "label": "内容区背景色",
+      "group": "夜间颜色",
+      "value": "#171717",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "pageBgColorDark",
+      "label": "网页背景色",
+      "group": "夜间颜色",
+      "value": "#000",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "titleTextColorDark",
+      "label": "标题文字颜色",
+      "group": "夜间颜色",
+      "value": "#D3CFC9",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "contextTextColorDark",
+      "label": "正文文字颜色",
+      "group": "夜间颜色",
+      "value": "#949494",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "linkColorDark",
+      "label": "链接颜色",
+      "group": "夜间颜色",
+      "value": "#868E96",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "linkHoverColorDark",
+      "label": "链接 Hover 颜色",
+      "group": "夜间颜色",
+      "value": "#9E41C6",
+      "type": "input",
+      "card": "color",
+      "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "github",
+      "label": "Github",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "twitter",
+      "label": "Twitter",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "weibo",
+      "label": "微博",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "zhihu",
+      "label": "知乎",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "wechat",
+      "label": "微信",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "qq",
+      "label": "QQ",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "facebook",
+      "label": "Facebook",
+      "group": "社交",
+      "value": "",
+      "type": "input",
+      "note": "链接地址"
+    },
+    {
+      "name": "customCss",
+      "label": "自定义CSS",
+      "group": "自定义样式",
+      "value": "",
+      "type": "textarea",
+      "note": ""
+    },
+    {
+      "name": "doAutoChangeTheme",
+      "label": "是否自动切换夜间模式",
+      "group": "自定义样式",
+      "value": true,
+      "type": "radio",
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ],
+      "note": "19:00 - 5:00 自动切换夜间模式"
+    },
+    {
+      "name": "bannerBgImage",
+      "label": "banner背景图",
+      "group": "自定义样式",
+      "value": "",
+      "type": "picture-upload",
+      "note": ""
+    },
+    {
+      "name": "googleFontHead",
+      "label": "自定义字体-引入代码",
+      "group": "自定义样式",
+      "value": "",
+      "type": "textarea",
+      "note": "仅支持 Google Fonts (fonts.google.com)"
+    },
+    {
+      "name": "googleFontFamily",
+      "label": "自定义字体-字族",
+      "group": "自定义样式",
+      "value": "",
+      "type": "textarea",
+      "note": "font-family: xxxx;"
+    },
+    {
+      "name": "googleA",
+      "label": "跟踪 ID",
+      "group": "谷歌统计",
+      "value": "",
+      "type": "input",
+      "note": "G-xxxxxxxxx"
+    },
+    {
+      "name": "metaDescription",
+      "label": "Meta Description",
+      "group": "SEO",
+      "value": "",
+      "type": "input"
+    },
+    {
+      "name": "friends",
+      "label": "友链",
+      "group": "友链",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        {
+          "label": "名称",
+          "name": "siteName",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "链接",
+          "name": "siteLink",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "Logo",
+          "name": "siteLogo",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "label": "描述",
+          "name": "description",
+          "type": "textarea",
+          "value": ""
+        }
+      ],
+      "note": ""
+    }
+  ]
+}

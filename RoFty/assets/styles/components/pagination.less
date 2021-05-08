@@ -1,0 +1,21 @@
+.pagination-container {
+    display        : flex;
+    padding        : 32px 16px;
+    justify-content: space-evenly;
+
+    a {
+        padding         : 5px 15px;
+        border          : 1px solid transparent;
+        border-radius   : 20px;
+        background-color: var(--box-bg-color);
+        color           : var(--title-text-color);
+        font-weight     : 600;
+        transition      : all .3s;
+
+        &:hover {
+            text-decoration: none;
+            border         : 1px solid var(--main-color);
+            transform      : translateY(-2px);
+        }
+    }
+}

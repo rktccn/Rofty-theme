@@ -1,0 +1,54 @@
+.card-friends {
+    margin-bottom: 5rem;
+
+    .card-columns {
+
+        column-count: 1;
+
+        @media (min-width:576px) {
+            column-count: 2;
+        }
+
+        @media (min-width:992px) {
+            column-count: 4;
+        }
+    }
+
+    .card {
+        position        : relative;
+        background-color: var(--box-bg-color);
+        transition      : all .3s;
+    }
+
+    .left {
+        position  : absolute;
+        left      : .75rem;
+        top       : 50%;
+        transform : translateY(-50%);
+        float     : left;
+        width     : 35%;
+        text-align: center;
+
+        img {
+            width        : 70px;
+            border-radius: 5rem;
+        }
+    }
+
+    p,
+    footer {
+        width     : 60%;
+        float     : right;
+        text-align: right;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+.no-friend {
+    width        : 100%;
+    margin-bottom: 5rem;
+    text-align   : center;
+}
