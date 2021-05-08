@@ -21,9 +21,9 @@ https://github.com/wskkku/Rofty-theme
 ## demo 网站
 https://wskkku.github.io/Rofty-theme/
 ## pc 端 (浅色，深色)
-![主页](file://C:/Users/legion/Documents/Gridea/post-images/1620469062905.png)
+![主页](/post-images/zhifubao.png)
 ## 手机端
-![](file://C:/Users/legion/Documents/Gridea/post-images/1620470070111.png)
+![](/post-images/weixin.png)
  # 捐赠
 
        <img src="https://z3.ax1x.com/2021/05/08/gGLEqA.jpg" sytle="width:50%">
