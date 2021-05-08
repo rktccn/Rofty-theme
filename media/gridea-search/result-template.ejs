@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="card-columns">
+    <% posts.forEach(function(post) { %>
+      <a href="<%= post.link %>">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          <% if (themeConfig.showFeatureImage && post.feature) { %>
+            <div class="clearfix" style="position: relative;">
+              <img src="<%= post.feature %>" class="card-img-top" alt="...">
+              <div class="mask-dark"></div>
+            </div>
+            <% } %>
+              <% if (themeConfig.showFeatureImage && post.feature) { %>
+                <div class="card-body clearfix role">
+                  <% } else{ %>
+                    <div class="card-body clearfix">
+                      <% } %>
+                        <h5 class="post-title card-title title">
+                          <%= post.title %>
+                        </h5>
+                        <div class="card-text context">
+                          <%- post.searchedPreview %>
+                        </div>
+                        <p class="card-text flexss">
+                          <small class="text-muted">
+                            <% var i=0%>
+                              <% post.tags.forEach(function(tag) { %>
+                                <% if ( i==2 ) { %>
+                                  <span style="font-weight: 600;">…</span>
+                                  <% } %>
+
+                                    <% i++ %>
+
+                                      <% if (i>2)return; %>
+                                        <a href="<%= tag.link %>" class="card-tag">
+                                          <%= tag.name %>
+                                        </a>
+                                        <% }); %>
+
+                                          <span class="date">
+                                            <%= post.dateFormat %>
+                                          </span>
+                          </small>
+                        </p>
+                    </div>
+                </div>
+      </a>
+      <% }); %>
+  </div>
+</div>

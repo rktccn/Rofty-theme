@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:4000</id>
+    <title>RoFty</title>
+    <updated>2021-05-08T14:20:10.907Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <subtitle>芜湖 起飞🛫</subtitle>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
+    <rights>All rights reserved 2021, RoFty</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>http://localhost:4000/post/hellow-gridea/</id>
+        <link href="http://localhost:4000/post/hellow-gridea/">
+        </link>
+        <updated>2021-05-07T15:55:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏 欢迎使用 <strong>Gridea</strong> ！<br>
+✍️ <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏 欢迎使用 <strong>Gridea</strong> ！<br>
+✍️ <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<h1 id="链接">链接</h1>
+<p><a href="https://github.com/getgridea/gridea">github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+[示例网站]</p>
+<h1 id="特性">特性👇</h1>
+<p>📝 你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉 你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️ 你可以对文章进行标签分组</p>
+<p>📋 你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻 你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
+<p>🌎 你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾</strong>𝗌 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬 你可以进行简单的配置，接入 <strong>Gitalk</strong> 或 <strong>DisqusJS</strong> 评论系统</p>
+<p>🇬🇧 你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁 你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥 你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如果支付宝倒了，我室友花呗欠1000，我余额宝有1000，我可以直接向室友要吗？(测试文章)]]></title>
+        <id>http://localhost:4000/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/</id>
+        <link href="http://localhost:4000/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/">
+        </link>
+        <updated>2021-05-07T15:33:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>我问了我室友我室友让我滚☹️</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我问了我室友我室友让我滚☹️</p>
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[寝室里有三个卷王是什么感受？(测试文章)]]></title>
+        <id>http://localhost:4000/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/</id>
+        <link href="http://localhost:4000/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/">
+        </link>
+        <updated>2021-05-07T15:32:15.000Z</updated>
+        <content type="html"><![CDATA[<p>真牛啊</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[买了 AirTag 后，你准备放到哪里？(测试文章)]]></title>
+        <id>http://localhost:4000/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/</id>
+        <link href="http://localhost:4000/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/">
+        </link>
+        <updated>2021-05-07T15:29:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>刚看完苹果的春季发布会，感叹新的iPad Pro搭载M1，真的令人惊叹不已。<br>
+最期待的还是AirTag，很好奇人们买了都会放到哪里呢？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>刚看完苹果的春季发布会，感叹新的iPad Pro搭载M1，真的令人惊叹不已。<br>
+最期待的还是AirTag，很好奇人们买了都会放到哪里呢？</p>
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中文排版]]></title>
+        <id>http://localhost:4000/post/zhong-wen-pai-ban/</id>
+        <link href="http://localhost:4000/post/zhong-wen-pai-ban/">
+        </link>
+        <updated>2021-05-07T14:17:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>五月天（Mayday），中国台湾摇滚乐团，成立于1997年3月29日，由温尚翊（怪兽）、陈信宏（阿信）、石锦航（石头）、蔡升晏（玛莎）、刘谚明（冠佑）五名成员组成。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>五月天（Mayday），中国台湾摇滚乐团，成立于1997年3月29日，由温尚翊（怪兽）、陈信宏（阿信）、石锦航（石头）、蔡升晏（玛莎）、刘谚明（冠佑）五名成员组成。</p>
+<!-- more -->
+<h1 id="五月天">五月天</h1>
+<h2 id="基本信息">基本信息</h2>
+<p>五月天（Mayday），中国台湾摇滚乐团，成立于1997年3月29日，由温尚翊（怪兽）、陈信宏（阿信）、石锦航（石头）、蔡升晏（玛莎）、刘谚明（冠佑）五名成员组成。</p>
+<p>1998年加入滚石唱片，正式开始音乐历程。1999年发行《第一张创作专辑》，其中歌曲《志明与春娇》获得中华音乐人交流协会最佳作词作曲奖。2001年凭借第二张创作专辑《爱情万岁》获得第12届台湾金曲奖最佳乐团奖，之后发行第三张创作专辑《人生海海》宣布暂别乐坛。2003年举办“天空之城”演唱会，宣布复出乐坛。2004年凭借专辑《时光机》获得第15届台湾金曲奖最佳乐团奖。2005年凭借专辑《神的孩子都在跳舞》获得第五届百事音乐风云榜年度最佳摇滚乐团奖、年度最佳摇滚专辑奖；同年发行第一张创作加精选专辑《知足 Just My Pride 最真杰作选》。</p>
+<p>2009年凭借第七张专辑《后青春期的诗》获得第20届台湾金曲奖最佳乐团奖  。2010年获得第10届CCTV-MTV音乐盛典港澳台地区年度最佳组合/乐队奖 。2012年在第23届台湾金曲奖颁奖典礼凭借第八张专辑《第二人生》获得最佳乐团奖、最佳专辑奖、最佳专辑制作人奖，凭借歌曲《诺亚方舟》获得最佳年度歌曲奖、最佳编曲人奖  。2014年在第四届全球流行音乐金榜颁奖典礼获得年度最佳乐团奖、年度最受欢迎组合/乐团奖，凭借歌曲《伤心的人别听慢歌（贯彻快乐）》获得年度20大金曲 。2017年凭借第九张专辑《自传》获得第28届台湾金曲奖最佳专辑奖 。2020年发行单曲《因为你 所以我》 。</p>
+<h2 id="早年经历">早年经历</h2>
+<p>1992年至1994年，阿信、怪兽、玛莎、石头先后结识于台湾师范大学附属中学，加入师大附中的吉他社，开启了音乐旅程。</p>
+<p>1995年，还在读高中的吉他手怪兽、主唱阿信，以及第一任的鼓手钱佑达组成名为“So Band”的乐团，之后贝斯手玛莎加入。四人自高中毕业后，分别进入不同的大学就读，但乐团并未停止活动，持续在许多酒吧、餐厅驻唱表演。</p>
+<p>1997年，野台开唱活动前，加入了吉他手石头，为了报名参加野台开唱，五人使用玛莎在网络论坛的代号“MAYDAY”作为团名，正式更名为“五月天”。3月29日，五月天参加“329台湾乐团野台开唱”演唱会，正式组成乐团  。</p>
+<p>1998年1月，参与乐团合辑《ㄞ国歌曲》的录制；之后，五月天将自己创作及全制作的Demo送到福茂唱片、索尼唱片、滚石唱片争取发专辑的机会，此Demo刚好被李宗盛听到，他用”新世纪未来的音乐将属于他们”来形容五月天，而他们也在6月与滚石唱片签下合约。6月，参与华语第二张同志专辑《拥抱》的制作，包括整张专辑的编曲、录音等制作，以及大部分词曲创作。同年，五月天担任滚石唱片群星演唱的“珍古德教育暨保育协会”国际中文版主题曲《大地之歌》的编曲，并参与演唱。在五月天发行第一张专辑前，公司为磨练及增强他们的现场演出及技巧，安排他们担任任贤齐的伴奏乐团，跟着任贤齐南征北讨学习经验，也让他们在发片前增加许多信心。</p>
+<p>1999年，第四任鼓手冠佑加入乐团，主唱阿信把成军时间改为冠佑加入后。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rofty 主题介绍]]></title>
+        <id>http://localhost:4000/post/rofty-zhu-ti-jie-shao/</id>
+        <link href="http://localhost:4000/post/rofty-zhu-ti-jie-shao/">
+        </link>
+        <updated>2021-05-06T08:50:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>这是一个Gridea主题</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这是一个Gridea主题</p>
+<!-- more -->
+<h1 id="功能介绍">功能介绍</h1>
+<ul>
+<li>支持夜间模式</li>
+<li>搜索功能<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></li>
+<li>自定义色彩</li>
+<li>支持谷歌统计</li>
+<li>支持Valine评论<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
+<li>响应式布局</li>
+<li>自定义字体</li>
+<li>…</li>
+</ul>
+<h1 id="安装">安装</h1>
+<h2 id="下载地址">下载地址</h2>
+<h3 id="天翼云">天翼云</h3>
+<p><a href="https://cloud.189.cn/t/bqMZNfbuINfi">网址</a>（访问码：9bkt）</p>
+<h3 id="github">github</h3>
+<h2 id="安装方法">安装方法</h2>
+<p>将文件解压后，放入<strong>文档/Gridea/themes 目录</strong>，重启应用即可选择使用。</p>
+<h1 id="预览">预览</h1>
+<h2 id="pc-端-浅色深色">pc 端 (浅色，深色)</h2>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1620469062905.png" alt="主页" loading="lazy"></figure>
+<h2 id="手机端">手机端</h2>
+<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1620470070111.png" alt="" loading="lazy"></figure>
+<h1 id="捐赠">捐赠</h1>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  支付宝
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://z3.ax1x.com/2021/05/08/gGLEqA.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  微信
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://z3.ax1x.com/2021/05/08/gGLArd.png">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+# 其他
+## 默认颜色
+| 名称 | 浅色  | 深色 |
+| ---- | :---: | ---: |
+| 网站主色调 |  #177CB0   | #9E41C6 |
+| 内容区背景色 |  #FFFFFF  | #1E1E1E |
+| 网页背景色 |  #F1F1F1   | #121212 |
+| 标题文字颜色 |  #222222   | #D3CFC9 |
+| 正文文字颜色 |  #333333   | #949494 |
+| 链接颜色 |  #999999   | #868E96 |
+| 链接 Hover 颜色 |  #177CB0   | #9E41C6 |
+# 写在最后
+由于本人也仅是一名初学者，因此部分代码可能较为复杂、繁乱，可能会出现一些意想不到的问题。还请多多包涵，非常感谢
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://github.com/kytrun/gridea-search">by kytrun</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>https://valine.js.org/(可关闭) <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[markdown 语法]]></title>
+        <id>http://localhost:4000/post/test/</id>
+        <link href="http://localhost:4000/post/test/">
+        </link>
+        <updated>2021-04-30T12:05:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>这是一个演示模板</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这是一个演示模板</p>
+<!-- more -->
+<h1 id="markdown-语法">markdown 语法</h1>
+<h2 id="引用">引用</h2>
+<blockquote>
+<p>人类的悲欢并不相通，我只觉得他们吵闹。</p>
+</blockquote>
+<h2 id="code">code</h2>
+<pre><code>public class MainClass
+{
+    public static void main(String[] args)
+    {
+        System.out.println(&quot;hello world&quot;);
+    }
+}
+</code></pre>
+<p><code>system.out.println(&quot;hello world&quot;)</code></p>
+<h2 id="列表">列表</h2>
+<h3 id="有序列表">有序列表</h3>
+<ol>
+<li>列表内容
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<h3 id="无序列表">无序列表</h3>
+<ul>
+<li>列表内容</li>
+<li>列表内容
+<ul>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ul>
+</li>
+<li>列表内容
+<ul>
+<li>列表内容</li>
+</ul>
+</li>
+</ul>
+<h3 id="列表嵌套">列表嵌套</h3>
+<ol>
+<li>列表内容
+<ul>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ul>
+</li>
+<li>列表内容
+<ul>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ul>
+</li>
+</ol>
+<h2 id="html-元素">html 元素</h2>
+<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+<h2 id="公式和注释">公式和注释</h2>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e^{i\pi}+1=0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9579939999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></p>
+<p>这是一个注释<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<h2 id="表格">表格</h2>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th style="text-align:center">技能</th>
+<th style="text-align:right">排行</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刘备</td>
+<td style="text-align:center">哭</td>
+<td style="text-align:right">大哥</td>
+</tr>
+<tr>
+<td>关羽</td>
+<td style="text-align:center">打</td>
+<td style="text-align:right">二哥</td>
+</tr>
+<tr>
+<td>张飞</td>
+<td style="text-align:center">骂</td>
+<td style="text-align:right">三弟</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="图片">图片</h2>
+<p><img src="https://z3.ax1x.com/2021/05/07/g8k1Df.jpg" alt="cat" loading="lazy"><br>
+<img src="https://z3.ax1x.com/2021/05/07/g8EkkD.jpg" alt="dog" loading="lazy"></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>你说得对 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+</feed>

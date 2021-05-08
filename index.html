@@ -1,0 +1,605 @@
+<html lang='zh-CN'>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>
+  RoFty
+</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/css/normalize0.0.0.1.css">
+<script src="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/js/jQuery.Rokss.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1620483529183">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+<link rel="alternate" type="application/atom+xml" title="RoFty - Atom Feed"
+  href="http://localhost:4000/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_light.min.css"
+  id="hightLightCode" rel="stylesheet" type="text/css" />
+
+
+<script>
+  var setStyle = function (cssArr) {
+    var i = 0, len = cssArr.length;
+    for (i; i < len; i++) {
+      document.write('<link href="' + cssArr[i] + '" type="text/css" rel=stylesheet>');
+    }
+  };
+
+  if ($.cookie('theme') === 'dark') {
+    $('html').attr('theme', 'dark');
+    $('#hightLightCode').attr('href', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_dark.min.css')
+  } else {
+    $('#hightLightCode').attr('href', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_light.min.css')
+  }
+
+</script>
+
+
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5JKRHJF7B"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z5JKRHJF7B');
+      </script>
+      
+        
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+            
+    <meta name="description" content="芜湖 起飞🛫" />
+</head>
+
+<body>
+  <div class="nav-placeholder">
+    <nav class="navbar navbar-expand-lg light-theme">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="http://localhost:4000/favicon.ico?v=1620483529183" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+                RoFty
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list navbar-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    
+                        
+                                <li class="nav-item">
+                                    <a href="http://localhost:4000" class="nav-link">
+                                        首页
+                                    </a>
+                                </li>
+                                
+                                    
+                        
+                                <li class="nav-item">
+                                    <a href="/archives" class="nav-link">
+                                        归档
+                                    </a>
+                                </li>
+                                
+                                    
+                        
+                                <li class="nav-item">
+                                    <a href="/tags" class="nav-link">
+                                        标签
+                                    </a>
+                                </li>
+                                
+                                    
+                        
+                                <li class="nav-item">
+                                    <a href="/friends" class="nav-link">
+                                        友链
+                                    </a>
+                                </li>
+                                
+                                    
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0" id="gridea-search-form"
+                    action="http://localhost:4000/search/">
+                    <input class="search-input mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q"
+                        autocomplete="off" />
+                    <button class="btn-search my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="theme-change">
+                    <ul>
+                        <i class="bi bi-sun-fill light-theme"></i>
+                        <i class="bi bi-moon-fill dark-theme"></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+    <script>
+        var nowTime = new Date()
+        var hour = nowTime.getHours()
+        if (hour >= 19 || hour <= 5 && $.cookie('theme') == undefined) {
+            $.cookie('theme', 'dark', { path: '/' })
+            $('html').attr('theme', 'dark');
+        }
+    </script>
+    
+
+        <script>
+            var themeFlag = 0
+            if ($.cookie('theme') === 'dark') {
+                $('.theme-change').find('ul').css({
+                    'transform': 'translateX(-55px)',
+                    'transition': 'none'
+                })
+                themeFlag = 1
+            }
+
+            $('.theme-change').click(function () {
+                $(this).find('ul').css('transition', '.3s')
+                if (themeFlag == 0) {
+                    $(this).find('ul').css('transform', 'translateX(-55px)');
+                    themeFlag = 1
+                    $.removeCookie('theme', { path: '/' })
+                    $.cookie('theme', 'dark', { path: '/' })
+                    $('html').attr('theme', 'dark');
+                } else {
+                    $(this).find('ul').css('transform', 'translateX(0px)');
+                    themeFlag = 0
+                    $.removeCookie('theme', { path: '/' })
+                    $.cookie('theme', 'light', { path: '/' })
+                    $('html').attr('theme', 'light');
+                }
+            });
+
+            window.addEventListener('scroll', function () {
+                if (this.pageYOffset >= 300) {
+                    $('.navbar').addClass('fixed-top').css({
+                        'background': 'var(--box-bg-color)',
+                        'border-bottom': '2px solid var(--main-color)',
+                    })
+
+                    $('.search-input').css('backgroundColor', 'var(--page-bg-color)')
+                    $('.btn-search').css('backgroundColor', 'var(--page-bg-color)')
+                } else {
+                    $('.navbar').removeClass('fixed-top').css({
+                        'background': 'none',
+                        'border-bottom': 'none',
+                    })
+
+                    $('.search-input').css('backgroundColor', 'var(--box-bg-color)')
+                    $('.btn-search').css('backgroundColor', 'var(--box-bg-color)')
+                }
+            })
+
+            $('.navbar-toggler').click(function () {
+                if (window.pageYOffset < 300) {
+                    if ($(this).attr('aria-expanded') == "false") {
+                        $('.navbar').css({
+                            'background': 'var(--box-bg-color)',
+                            'border-bottom': '2px solid var(--main-color)',
+                        })
+
+                        $('.search-input').css('backgroundColor', 'var(--page-bg-color)')
+                        $('.btn-search').css('backgroundColor', 'var(--page-bg-color)')
+                    } else {
+                        $('.navbar').css({
+                            'background': 'none',
+                            'border-bottom': 'none',
+                        })
+
+                        $('.search-input').css('backgroundColor', 'var(--box-bg-color)')
+                        $('.btn-search').css('backgroundColor', 'var(--box-bg-color)')
+                    }
+                }
+            });
+            console.log($.cookie('theme'));
+        </script>
+
+    <div class="jumbotron">
+
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 d-none d-lg-block"></div>
+          <div class="col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
+            <div class="avatar"
+              style="background: url('http://localhost:4000/images/avatar.png?v=1620483529183');background-size: cover;"
+              alt="">
+              <div class="mask-dark"></div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <h1 class="display-4 title">
+              RoFty
+            </h1>
+            <p class="lead context">
+              芜湖 起飞🛫
+            </p>
+            
+              <a class="btn btn-primary btn-lg" href="https://wskkku.github.io/post/about/" r='btn-hover' role="button"
+                id="about-me">关于我</a>
+              
+          </div>
+        </div>
+      </div>
+</div>
+
+      <div class="container">
+  <div class="card-columns">
+    
+      <a href="http://localhost:4000/post/rofty-zhu-ti-jie-shao/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+            <span class="badge title">Top</span>
+            
+              
+                <div class="clearfix" style="position: relative;">
+                  <img src="https://z3.ax1x.com/2021/05/06/glsQyR.png" class="card-img-top" alt="...">
+                  <div class="mask-dark"></div>
+                </div>
+                
+                  
+                    <div class="card-body clearfix role">
+                      
+                            <h5 class="card-title title">
+                              Rofty 主题介绍
+                            </h5>
+                            <div class="card-text context">
+                              <p>这是一个Gridea主题</p>
+
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+
+                                              <span class="date">
+                                                2021-05-06
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+      <a href="http://localhost:4000/post/hellow-gridea/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+              
+                  
+                        <div class="card-body clearfix">
+                          
+                            <h5 class="card-title title">
+                              Hello Gridea
+                            </h5>
+                            <div class="card-text context">
+                              <p>👏 欢迎使用 <strong>Gridea</strong> ！<br>
+✍️ <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+
+                                              <span class="date">
+                                                2021-05-07
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+      <a href="http://localhost:4000/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+              
+                  
+                        <div class="card-body clearfix">
+                          
+                            <h5 class="card-title title">
+                              如果支付宝倒了，我室友花呗欠1000，我余额宝有1000，我可以直接向室友要吗？(测试文章)
+                            </h5>
+                            <div class="card-text context">
+                              <p>我问了我室友我室友让我滚☹️</p>
+
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+                                    
+
+                                        
+
+                                          
+                                            <a href="http://localhost:4000/tag/6I4aJwSAU/" class="card-tag">
+                                              真牛啊
+                                            </a>
+                                            
+
+                                              <span class="date">
+                                                2021-05-07
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+      <a href="http://localhost:4000/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+              
+                  
+                        <div class="card-body clearfix">
+                          
+                            <h5 class="card-title title">
+                              寝室里有三个卷王是什么感受？(测试文章)
+                            </h5>
+                            <div class="card-text context">
+                              
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+                                    
+
+                                        
+
+                                          
+                                            <a href="http://localhost:4000/tag/HDqn37_9P/" class="card-tag">
+                                              大学
+                                            </a>
+                                            
+                                    
+
+                                        
+
+                                          
+                                            <a href="http://localhost:4000/tag/2TDg1ZOhGK/" class="card-tag">
+                                              生活
+                                            </a>
+                                            
+
+                                              <span class="date">
+                                                2021-05-07
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+      <a href="http://localhost:4000/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+              
+                <div class="clearfix" style="position: relative;">
+                  <img src="https://pic4.zhimg.com/v2-dd85be3ecae9602bdcd4b04700dd9e7a_r.jpg?source=1940ef5c" class="card-img-top" alt="...">
+                  <div class="mask-dark"></div>
+                </div>
+                
+                  
+                    <div class="card-body clearfix role">
+                      
+                            <h5 class="card-title title">
+                              买了 AirTag 后，你准备放到哪里？(测试文章)
+                            </h5>
+                            <div class="card-text context">
+                              <p>刚看完苹果的春季发布会，感叹新的iPad Pro搭载M1，真的令人惊叹不已。<br>
+最期待的还是AirTag，很好奇人们买了都会放到哪里呢？</p>
+
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+                                    
+
+                                        
+
+                                          
+                                            <a href="http://localhost:4000/tag/-Epa_9V6b/" class="card-tag">
+                                              苹果
+                                            </a>
+                                            
+                                    
+
+                                        
+
+                                          
+                                            <a href="http://localhost:4000/tag/2TDg1ZOhGK/" class="card-tag">
+                                              生活
+                                            </a>
+                                            
+
+                                              <span class="date">
+                                                2021-05-07
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+      <a href="http://localhost:4000/post/zhong-wen-pai-ban/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+              
+                <div class="clearfix" style="position: relative;">
+                  <img src="https://z3.ax1x.com/2021/05/07/g8iiGR.jpg" class="card-img-top" alt="...">
+                  <div class="mask-dark"></div>
+                </div>
+                
+                  
+                    <div class="card-body clearfix role">
+                      
+                            <h5 class="card-title title">
+                              中文排版
+                            </h5>
+                            <div class="card-text context">
+                              <p>五月天（Mayday），中国台湾摇滚乐团，成立于1997年3月29日，由温尚翊（怪兽）、陈信宏（阿信）、石锦航（石头）、蔡升晏（玛莎）、刘谚明（冠佑）五名成员组成。</p>
+
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+                                    
+
+                                        
+
+                                          
+                                            <a href="http://localhost:4000/tag/gxLWxRuuV/" class="card-tag">
+                                              五月天
+                                            </a>
+                                            
+
+                                              <span class="date">
+                                                2021-05-07
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+      <a href="http://localhost:4000/post/test/">
+        <div class="card" style="background-color: var(--box-bg-color);">
+          
+              
+                  
+                        <div class="card-body clearfix">
+                          
+                            <h5 class="card-title title">
+                              markdown 语法
+                            </h5>
+                            <div class="card-text context">
+                              <p>这是一个演示模板</p>
+
+                            </div>
+                            <p class="card-text flexss">
+                              <small class="text-muted">
+                                
+                                  
+
+                                              <span class="date">
+                                                2021-04-30
+                                              </span>
+                              </small>
+                            </p>
+                        </div>
+                    </div>
+      </a>
+      
+  </div>
+</div>
+
+        <div class="container">
+  <div class="pagination-container">
+    
+        
+  </div>
+</div>
+          <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="detial">
+           <ul>
+                    <li>by RoI</li>
+                    <li class="spacer">/</li>
+                    <li>from 2021</li>
+                    <li class="spacer">/</li>
+                    <li> Powered by <a href="https://github.com/getgridea/gridea" target="_blank">&nbsp;Gridea</a></li>
+                </ul>
+
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="about-me">
+          <div class="avator"
+            style="background: url('http://localhost:4000/images/avatar.png?v=1620483529183');background-size: cover;">
+            <div class="mask-dark"></div>
+          </div>
+          <div class="social-link">
+            
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-twitter-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-weibo-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-zhihu-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-facebook-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-wechat-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-qq-line"></i>
+                </a>
+                
+                  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
