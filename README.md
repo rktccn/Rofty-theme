@@ -14,12 +14,12 @@
 ### 天翼云
 [网址]()（访问码：q9po）
 ### github
-https://roftydemo.github.io/
+https://github.com/wskkku/Rofty-theme
 ## 安装方法
 将文件解压后，放入**文档/Gridea/themes 目录**，重启应用即可选择使用。
 # 预览
 ## demo 网站
-https://ro-fty-demo.vercel.app/
+https://roftydemo.github.io/
 ## pc 端 (浅色，深色)
 ![主页](/post-images/index.png)
 ## 手机端
