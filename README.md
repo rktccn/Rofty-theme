@@ -11,8 +11,6 @@
 +  …
 # 安装
 ## 下载地址
-### 天翼云
-https://cloud.189.cn/t/qeUN7rBFJVbm（访问码：a0h5）
 ### github
 https://github.com/wskkku/Rofty-theme
 ## 安装方法
