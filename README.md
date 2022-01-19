@@ -24,11 +24,6 @@ https://roftydemo.github.io/
 ![主页](/post-images/index.png)
 ## 手机端
 ![](/post-images/index-m.png)
- # 捐赠
-
-![支付宝](/post-images/zhifubao.jpg)
-
-![微信](/post-images/weixin.png)
        
 # 写在最后
 由于本人也仅是一名初学者，因此部分代码可能较为复杂、繁乱，可能会出现一些意想不到的问题。还请多多包涵，非常感谢
