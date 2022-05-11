@@ -1,10 +1,9 @@
 {
-  "name": "RoFty",
-  "version": "0.1.2",
+  "name": "RoFty-test",
+  "version": "0.2.3",
   "author": "Rolce",
-  "repository": "https://github.com/wskkku/Rofty-theme",
-  "customConfig": [
-    {
+  "repository": "https://github.com/rktccn/Rofty-theme",
+  "customConfig": [{
       "group": "Valine评论设置",
       "label": "Appid",
       "name": "valineAppid",
@@ -239,8 +238,7 @@
       "group": "自定义样式",
       "value": true,
       "type": "radio",
-      "options": [
-        {
+      "options": [{
           "label": "是",
           "value": true
         },
@@ -295,8 +293,7 @@
       "label": "友链",
       "group": "友链",
       "type": "array",
-      "value": [
-        {
+      "value": [{
           "siteName": "海岛心hey",
           "siteLink": "https://fehey.com",
           "siteLogo": "",
@@ -315,8 +312,7 @@
           "description": "芜湖，起飞🛫"
         }
       ],
-      "arrayItems": [
-        {
+      "arrayItems": [{
           "label": "名称",
           "name": "siteName",
           "type": "input",

@@ -4,7 +4,7 @@
   <%- include('./includes/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %>
     <meta name="description" content="<%- post.description %>" />
     <meta name="keywords" content="<%- post.tags.map(tag => tag.name).join(',') %>" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css"> -->
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -97,7 +97,20 @@
                     <% } %>
                       <% } %>
 
-                        <%- include('./includes/valine') %>
+                        <% if (false) {%>
+                          <%- include('./includes/valine') %>
+                            <% } %>
+
+                              <!--PC版-->
+                              <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+                              <script charset="utf-8" type="text/javascript"
+                                src="https://cy-cdn.kuaizhan.com/upload/changyan.js"></script>
+                              <script type="text/javascript">
+                                window.changyan.api.config({
+                                  appid: 'cyvvpf8HL',
+                                  conf: 'prod_4b73ec820ce1513f3db79883d69a80b5'
+                                });
+                              </script>
 
 
       </div>
