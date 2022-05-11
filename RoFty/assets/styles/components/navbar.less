@@ -18,32 +18,35 @@
 }
 
 .navbar {
-    z-index         : 999;
-    padding         : 8px 16px;
+    z-index: 999;
+    padding: 8px 16px;
     background-color: transparent;
 
     .navbar-brand {
-        color      : var(--title-text-color);
+        color: var(--title-text-color);
         font-weight: 400;
+        line-height: 0;
     }
+
 
     .nav-item {
         position: relative;
+        font-weight: 600;
 
         .nav-link {
             position: relative;
-            padding : 8px 21px;
+            padding: 8px 21px;
 
             @media (min-width:992px) {
                 &::after {
-                    position        : absolute;
-                    content         : '';
-                    bottom          : 0;
-                    left            : 0;
-                    width           : 0;
-                    height          : 3px;
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
                     background-color: var(--main-color);
-                    transition      : all .3s;
+                    transition: all .3s;
                 }
 
                 &:hover {
@@ -56,51 +59,27 @@
     }
 
     .form-inline {
+        background-color: var(--box-bg-color);
+        height: 40px;
+        padding: 8px 16px;
+        border-radius: 50px;
+        overflow: hidden;
 
-        .search-input {
-            height          : 34px;
-            margin-right    : 0 !important;
-            border-radius   : 1rem 0 0 1rem;
-            padding         : .375rem .75rem;
-            font-size       : 1rem;
-            font-weight     : 400;
-            line-height     : 1.5;
-            color           : var(--context-text-color);
-            background-color: var(--box-bg-color);
-            background-clip : padding-box;
-            border          : none;
-            cursor          : auto;
-
-            border      : 1px solid transparent;
-            border-right: none;
-
-            &:focus {
-                border      : 1px solid var(--main-color);
-                border-right: none;
-
-                &+.btn-search {
-                    border     : 1px solid var(--main-color);
-                    border-left: none;
-                }
-            }
+        &:focus-within {
+            box-shadow: 0 0 0 1px var(--main-color);
         }
 
-        .btn-search {
-            height          : 34px;
-            margin-right    : 0 !important;
-            border-radius   : 0 1rem 1rem 0;
-            padding         : .375rem .75rem;
-            font-size       : 1rem;
-            font-weight     : 400;
-            line-height     : 1.5;
-            color           : var(--context-text-color);
-            background-color: var(--box-bg-color);
-            background-clip : padding-box;
-            border          : none;
-            cursor          : pointer;
+        input {
+            background-color: transparent;
+        }
 
-            border     : 1px solid transparent;
-            border-left: none;
+
+        .btn-search {
+            cursor: pointer;
+            width: 24px;
+            background-color: var(--box-bg-color);
+            height: 24px;
+            color: var(--context-text-color);
 
             &:hover {
                 &::after {
@@ -111,28 +90,31 @@
     }
 
     .theme-change {
-        display     : flex;
-        align-items : center;
-        width       : 40px;
-        height      : 40px;
-        margin-left : 15px;
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
         padding-left: 5px;
-        white-space : nowrap;
-        overflow    : hidden;
-        cursor      : pointer;
-        user-select : none;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
 
         @media (max-width: 992px) {
             margin-bottom: 60px;
         }
 
         ul {
-            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin: 0;
 
-            i {
+            .icon {
                 margin-right: 20px;
-                font-size   : 30px;
-                color       : var(--context-text-color);
+                font-size: 30px;
+                color: var(--context-text-color);
 
                 &:first-child {
                     font-size: 32px;
@@ -143,14 +125,14 @@
 }
 
 .navbar-toggler {
-    color       : var(--main-color);
+    color: var(--main-color);
     border-color: var(--main-color);
-    user-select : none;
+    user-select: none;
 
     .navbar-toggler-icon {
         &::before {
-            width      : 100%;
-            height     : 100%;
+            width: 100%;
+            height: 100%;
             line-height: 30px;
         }
     }
