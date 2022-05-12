@@ -19,7 +19,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <i class="bi bi-list navbar-toggler-icon"></i>
+        <span class="material-symbols-rounded"> menu </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,7 +51,7 @@
             name="q"
             autocomplete="off"
           />
-          <button class="btn-search my-2 my-sm-0" type="submit">
+          <button class="btn-search my-sm-0" type="submit">
             <span class="material-symbols-rounded"> search </span>
           </button>
         </form>
@@ -116,16 +116,14 @@
         "border-bottom": "2px solid var(--main-color)",
       });
 
-      $(".search-input").css("backgroundColor", "var(--page-bg-color)");
-      $(".btn-search").css("backgroundColor", "var(--page-bg-color)");
+      $(".form-inline").css("backgroundColor", "var(--page-bg-color)");
     } else {
       $(".navbar").removeClass("fixed-top").css({
         background: "none",
         "border-bottom": "none",
       });
 
-      $(".search-input").css("backgroundColor", "var(--box-bg-color)");
-      $(".btn-search").css("backgroundColor", "var(--box-bg-color)");
+      $(".form-inline").css("backgroundColor", "var(--box-bg-color)");
     }
   });
 
@@ -136,17 +134,13 @@
           background: "var(--box-bg-color)",
           "border-bottom": "2px solid var(--main-color)",
         });
-
-        $(".search-input").css("backgroundColor", "var(--page-bg-color)");
-        $(".btn-search").css("backgroundColor", "var(--page-bg-color)");
+        $(".form-inline").css("backgroundColor", "var(--page-bg-color)");
       } else {
         $(".navbar").css({
           background: "none",
           "border-bottom": "none",
         });
-
-        $(".search-input").css("backgroundColor", "var(--box-bg-color)");
-        $(".btn-search").css("backgroundColor", "var(--box-bg-color)");
+        $(".form-inline").css("backgroundColor", "var(--box-bg-color)");
       }
     }
   });

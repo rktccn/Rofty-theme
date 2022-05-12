@@ -1,0 +1,112 @@
+@keyframes navshowin {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.fixed-top {
+  animation: navshowin 0.5s;
+}
+.nav-placeholder {
+  height: 56px;
+}
+.navbar {
+  z-index: 999;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+.navbar .navbar-brand {
+  color: var(--title-text-color);
+  font-weight: 400;
+  line-height: 0;
+}
+.navbar .nav-item {
+  position: relative;
+  font-weight: 600;
+}
+.navbar .nav-item .nav-link {
+  position: relative;
+  padding: 8px 21px;
+}
+@media (min-width: 992px) {
+  .navbar .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    transition: all 0.3s;
+  }
+  .navbar .nav-item .nav-link:hover::after {
+    width: 100%;
+  }
+}
+.navbar .form-inline {
+  background-color: var(--box-bg-color);
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.navbar .form-inline:focus-within {
+  box-shadow: 0 0 0 1px var(--main-color);
+}
+.navbar .form-inline input {
+  flex: 1 1 0;
+  background-color: transparent;
+}
+.navbar .form-inline .btn-search {
+  cursor: pointer;
+  width: 24px;
+  background-color: transparent;
+  height: 24px;
+  color: var(--context-text-color);
+}
+.navbar .form-inline .btn-search:hover::after {
+  opacity: 0.3;
+}
+.navbar .theme-change {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+@media (max-width: 992px) {
+  .navbar .theme-change {
+    margin-bottom: 60px;
+  }
+}
+.navbar .theme-change ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+.navbar .theme-change ul .icon {
+  margin-right: 20px;
+  font-size: 30px;
+  color: var(--context-text-color);
+}
+.navbar .theme-change ul .icon:first-child {
+  font-size: 32px;
+}
+.navbar-toggler {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  user-select: none;
+}
+.navbar-toggler .navbar-toggler-icon::before {
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+}
